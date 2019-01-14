@@ -1,0 +1,15 @@
+<p>
+  template-form works!
+</p>
+<div>
+  <form (ngSubmit)="onSubmit()" #employeeformref="ngForm">
+    <input type="text" name="name" [(ngModel)]="model.name" required #nameref="ngModel"/> 
+    <div [hidden]="nameref.valid || nameref.pristine" >Name is Required</div>
+    <br/>
+    <input type="text" name="age" [(ngModel)]="model.age" required #ageref="ngModel"/>
+    <div [hidden]="ageref.valid || ageref.pristine">Age is Required</div>
+    <br/>
+    <input type="email" name="email" [(ngModel)]="model.email" required/><br/>
+    <input type="submit" [disabled]="!employeeformref.form.valid"/>
+  </form>
+</div>

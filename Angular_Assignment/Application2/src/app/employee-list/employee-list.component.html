@@ -1,0 +1,18 @@
+<p>
+  employee-list works!
+</p>
+<!-- <div *ngFor="let emp of employees">
+  {{emp}}
+</div> -->
+
+<div *ngFor="let user of users.result;let i=index">
+  <ng-container *ngIf="i<employeecount">
+    <button (click)="onClick(user)" >{{user.id}}  {{user.name}}</button>
+    <br/><br/>
+  </ng-container> 
+</div>
+
+
+
+
+

@@ -1,0 +1,11 @@
+<p>
+  employeedetails works!
+</p>
+<div *ngFor="let employee of employees.result">
+  <ng-container *ngIf="employee.id==employeeid">
+    <p>
+      {{employee.id}}
+      {{employee.name}}
+    </p>
+  </ng-container>
+</div>
