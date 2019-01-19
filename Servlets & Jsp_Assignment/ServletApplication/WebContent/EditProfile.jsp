@@ -32,9 +32,9 @@ input[type=submit] {
 	%>
 	<form action="editprofile" method="post">
 		<label>Password</label>
-		<input type="password" name="password" placeholder="new password"/>
+		<input type="password" name="password" placeholder="new password" required/>
 		<label>nickname</label>
-		<input type="text" name="nickname" placeholder="new nickname"/>
+		<input type="text" name="nickname" placeholder="new nickname" required/>
 		<input type="submit" value="update" name="update"/>
 	</form>
 	<form action="profile.jsp"><input type="submit" value="Back"/></form>
