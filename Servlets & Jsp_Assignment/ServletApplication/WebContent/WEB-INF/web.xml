@@ -34,6 +34,7 @@
   <servlet>
     <servlet-name>LoginServlet</servlet-name>
     <servlet-class>com.servletapplication.servlet.LoginServlet</servlet-class>
+    <load-on-startup>0</load-on-startup>
   </servlet>
   <servlet-mapping>
     <servlet-name>LoginServlet</servlet-name>
