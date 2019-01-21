@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" import="com.servletapplication.model.User,com.servletapplication.log.ServletApplicationLogger"
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" import="com.accolite.servletapplication.model.User,com.accolite.servletapplication.log.ServletApplicationLogger"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>

@@ -3,8 +3,9 @@
   <display-name>ServletApplication</display-name>
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
+    
   </welcome-file-list>
-  <context-param>
+    <context-param>
     <param-name>logfilepath</param-name>
     <param-value>C:\Users\Madhukar\Desktop\log.txt</param-value>
   </context-param>
@@ -29,12 +30,11 @@
     <param-value>root</param-value>
   </context-param>
   <listener>
-    <listener-class>com.servletapplication.listener.ServletApplicationContextListener</listener-class>
+    <listener-class>com.accolite.servletapplication.listener.ServletApplicationContextListener</listener-class>
   </listener>
   <servlet>
     <servlet-name>LoginServlet</servlet-name>
-    <servlet-class>com.servletapplication.servlet.LoginServlet</servlet-class>
-    <load-on-startup>0</load-on-startup>
+    <servlet-class>com.accolite.servletapplication.servlet.LoginServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>LoginServlet</servlet-name>
@@ -42,7 +42,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>LogoutServlet</servlet-name>
-    <servlet-class>com.servletapplication.servlet.LogoutServlet</servlet-class>
+    <servlet-class>com.accolite.servletapplication.servlet.LogoutServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>LogoutServlet</servlet-name>
@@ -50,7 +50,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>EditProfile</servlet-name>
-    <servlet-class>com.servletapplication.servlet.EditProfile</servlet-class>
+    <servlet-class>com.accolite.servletapplication.servlet.EditProfile</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>EditProfile</servlet-name>
@@ -58,7 +58,7 @@
   </servlet-mapping>
   <filter>
   	<filter-name>LogFilter</filter-name>
-  	<filter-class>com.servletapplication.filter.LogFilter</filter-class>
+  	<filter-class>com.accolite.servletapplication.filter.LogFilter</filter-class>
   </filter>
   <filter-mapping>
   	<filter-name>LogFilter</filter-name>
