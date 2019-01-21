@@ -4,7 +4,7 @@ Project Initial set up
 	dbname 
 	setup tomcat server to the project
 
-packages
+packages:
 	com.servletapplication.log
 		ServletApplicationLogger ->Custom Logger
 	com.servletapplication.model
@@ -21,4 +21,10 @@ packages
 	com.servletapplication.service
 		AuthenticateService	->Authenticate user(username, password)
 	com.servletapplication.servlet
+Login:
+	use the following data to login(Default data in users table)
+	username:D-madhukar
+	password:madhukar
+	
+	
 		
