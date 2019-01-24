@@ -8,11 +8,12 @@ import com.accolite.springmvc.dao.UserDao;
 
 @Configuration
 @ComponentScan("com.accolite.springmvc.dao")
+@PropertySource("classpath:properties/db.properties")
 public class DaoBeanConfig {
 	
 	@Bean
 	
 	public UserDao userdao() {
-		return new UserDao("com.mysql.jdbc.Driver","jdbc:mysql://localhost:3306/springmvc","root","root");
+		return new UserDao(env.getProperty("db.driver"),env.getProperty("db.url"),env.getProperty("db.userName"),env.getProperty("db.password"));
 	}
 }
